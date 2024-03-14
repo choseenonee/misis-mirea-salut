@@ -1,0 +1,67 @@
+.Analytics {
+    z-index: 10;
+    text-align: center;
+}
+
+
+.filters {
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.dropdown-container {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+.dropdown {
+    animation: fadeOut 0.2s ease-in-out forwards;
+    z-index: 1000;
+}
+
+.dropdown-active {
+    animation: fadeIn 0.2s ease-in-out forwards;
+
+}
+
+
+.green-wide-line-1 {
+    width: 100%;
+    bottom: 1%;
+    position: fixed;
+    z-index: 1;
+  }
+  
+.green-wide-line-2 {
+    width: 100%;
+    bottom: 23%;
+    position: fixed;
+    z-index: 1;
+  }
+  

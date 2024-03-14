@@ -1,0 +1,57 @@
+.raw {
+  position: relative;
+  border: 0.5px solid #CCBED4;
+  color: #718096;
+  display: flex;
+  width: 99%;
+  height: 31px;
+  display: flex;
+  justify-content: space-between;
+  /* padding-inline: 5%; */
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+}
+
+.raw p {
+  width: 150px;
+}
+
+
+.diff-input-div {
+  width: 100px;
+}
+
+.note-div {
+  width: 10px;
+  padding-inline: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.note {
+  font-size: 12px;
+}
+
+.raw:hover {
+  background-color: #F4EFF6;
+}
+
+.passive-input {
+  width: 50px;
+  border-radius: 6px;
+  border: 1px solid #CCBED4;
+  transition: 0.3s ease;
+}
+
+.passive-input:focus {
+  width: 60px;
+}
+
+.active-input {
+  width: 50px;
+  border-radius: 6px;
+  border: 2px solid #965FEA;
+  transition: 0.3s ease;
+}
+

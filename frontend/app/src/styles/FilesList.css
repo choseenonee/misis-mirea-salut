@@ -1,0 +1,112 @@
+.files-list {
+  position: relative;
+  z-index: 1000;
+  width: 225px;
+  height: fit-content;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  padding: 25px 25px 25px 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 25px;
+  transition: 0.3s ease;
+}
+
+.files-list:hover {
+  box-shadow: 3px 7px 20px rgba(0, 0, 0, 0.25);
+}
+
+.pink-line {
+  
+  height: 3px;
+  /* width: 100px; */
+  align-self: flex-start;
+  border-radius: 20px;
+  margin-left: 5px;
+}
+
+.all-files {
+  width: 110%;
+  display: flex;
+  flex-direction: column;
+  gap:6px;
+}
+
+.file {
+  display: flex;
+  justify-content:flex-start;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.file:hover .file-name {
+    transform: translate(10px);
+    color: #6C757D;
+
+}
+
+.file-name {
+  color: #ADB5BD;
+  font-weight: 400;
+  transition: 0.3s ease;
+}
+
+.small-file-icon {
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+.file:hover .small-file-icon {
+  opacity: .8;
+}
+
+.file-active {
+  display: flex;
+  justify-content:flex-start;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.file-active .file-name {
+  transform: translate(10px);
+  color: black;
+}
+
+.file-active .small-file-icon {
+  opacity: 1;
+}
+
+.add-input {
+  border-radius: 8px;
+  padding-left: 5px;
+  width: 150px;
+  outline: none;
+  border: 1px solid gray;
+  transition: 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.add-input:hover {
+  box-shadow: 3px 7px 20px rgba(0, 0, 0, 0.25);
+}
+
+.add-input::placeholder {
+  padding-left: 3px;
+}
+
+.add-input:focus {
+  border: 1px solid purple;
+}
+
+.add-file-icon {
+  opacity: 0.5;
+  padding-left: 100px;
+  width: 35px;
+  transition: 0.3s ease;
+}
+
+.add-file-icon:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,283 @@
+.back-ground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.empty-div-login {
+    position: relative;
+}
+
+.conteiner {
+    position: relative;
+    padding: 64px 48px 64px 48px;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    /* top: 287px;
+    left: 552px; */
+    border-radius: 120px;
+    width: 336px;
+    height: 433px;
+    box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.16);
+    gap: 10px;
+    z-index: 10;
+}
+
+
+
+
+.inside-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 240px;
+    height: 305px;
+    gap: 24px;
+}
+
+
+.blue_ball {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: -40px;
+    right: -50px;
+    /* left: 60%; */
+    transition: 0.5s ease;
+    z-index: 11;
+}
+
+.blue_ball:hover {
+    height: 150px;
+    width: 150px;
+    transition: 0.5s ease;
+}
+
+.purple_ball {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    /* bottom: 65%; */
+    left: -20px;
+    z-index: 1;
+    transition: 0.5s ease;
+}
+
+.purple_ball:hover {
+    height: 70px;
+    width: 70px;
+    transition: 0.5s ease;
+}
+
+.red_ball {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: -10px;
+    right: -60px;
+    transition: 0.5s ease;
+}
+
+.red_ball:hover {
+    height: 160px;
+    width: 160px;
+    transition: 0.5s ease;
+}
+
+.green_ball {
+    position: absolute;
+    width: 167px;
+    height: 167px;
+    bottom: -30px;
+    left: -85px;
+    transition: 0.5s ease;
+    z-index: 11;
+}
+
+.green_ball:hover {
+    height: 180px;
+    width: 180px;
+    transition: 0.5s ease;
+}
+
+.label {
+    height: 228px;
+    height: 59px;
+    font-weight: 400;
+    font-size: 22px;
+    font-family: "Inter";
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.label p {
+    margin: 0px;
+}
+
+.label span {
+    font-family: "Lato" bold;
+    font-weight: 800;
+}
+
+.avito {
+    font-weight: 700;
+}
+
+.line {
+    height: 4px;
+    pointer-events: none;
+    
+}
+
+.input-field {
+    position: relative;
+    display:grid;
+    justify-items: center;
+    gap: 36px;
+    z-index: 1000;
+}
+
+.input {
+    position: relative;
+    width: 240px;
+    height: 38px;
+    border-width: 1px;
+    font-size: 16px;
+    font-family: 'Inter';
+    border-radius: 10px;
+    border-color: #DEE2E6; 
+    padding: 5px 19px 5px 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+    outline: none;
+    
+}
+
+.input:hover {
+    transition: 0.3s ease;
+    box-shadow: 3px 7px 20px rgba(0, 0, 0, 0.25);
+}
+
+.input::placeholder {
+    color: #DEE2E6; 
+}
+
+.input:focus {
+    border-color: rgba(150, 95, 234, 1);
+}
+
+.form {
+    position: relative;
+    display: flex;
+    z-index: 1000;
+
+}
+
+.form img {
+    position: absolute;
+    top:15px;
+    right: 15px;
+}
+
+.input-show
+
+.error {
+    color: #F00;
+    font-family: 'Inter';
+    margin-top: 0px;
+    transition: 0.3s ease;
+}
+
+.enter-button {
+    display: flex;
+    width: 89px;
+    height: 48px;
+    background-color: #05AAFF;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.enter-button:hover {
+    transition: 0.3s ease;
+    background-color: #1698d8;
+}
+
+.enter-button p {
+    font-family: "Inter", sans-serif;
+}
+
+.enter-button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 430px) {
+    
+
+    .conteiner {
+     width: 190px;
+     box-shadow: none;
+     z-index: 555;
+    }
+ 
+    .blue_ball {
+     width: 100px;
+     top: -60px;
+     right: -20px;
+     z-index: 900;
+    }
+ 
+    .blue_ball:hover {
+     width: 110px;
+    }
+
+    .green_ball {
+        width: 100px;
+        bottom: 70px;
+        left: -20px;
+        z-index: 900;
+       }
+    
+    .green_ball:hover {
+        width: 110px;
+    }
+
+    .red_ball {
+        width: 80px;
+        bottom: 110px;
+        right: -20px;
+        z-index: 900;
+       }
+    
+    .red_ball:hover {
+        width: 90px;
+    }
+
+    .purple_ball {
+        width: 50px;
+        top: 0;
+        left: 0;
+        z-index: 900;
+       }
+    
+    .purple_ball:hover {
+        width: 60px;
+    }
+
+    .error {
+        position: fixed;
+        bottom: 20px;
+    }
+    
+ }

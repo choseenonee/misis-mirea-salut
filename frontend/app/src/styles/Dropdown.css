@@ -1,0 +1,90 @@
+/* Dropdown.css */
+.dropdown-container {
+    position: relative;
+    width: 220px;
+    border-radius: 20px;
+    
+}
+
+.dropdown-selected {
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+}
+
+.dropdown-icon {
+    font-size: 12px;
+}
+
+.dropdown-list {
+    position: absolute;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    background: white;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+    border-radius: 20px;
+}
+
+.dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #6C757D;
+    animation: onUnFocus .3s forwards;
+    font-size: 16px;
+    font-weight: 400;
+    z-index: 10;
+}
+
+@keyframes onFocus {
+    from {
+        padding-left: 10px;
+    }
+    to {
+        padding-left: 16px;
+    }
+}
+
+
+@keyframes onUnFocus {
+    from {
+        padding-left: 16px;
+    }
+    to {
+        padding-left: 10px;
+    }
+}
+
+.dropdown-option:hover {
+    animation: onFocus .3s forwards;
+}
+
+.selected {
+    color: #000;
+    font-weight: bold;
+    border-left: 4px solid #000;
+    z-index: 1000;
+}
+
+svg {
+    margin-right: 8px;
+}
+
+.for-z-index {
+    position: relative;
+    z-index: 10000;
+}

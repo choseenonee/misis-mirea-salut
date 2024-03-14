@@ -1,0 +1,149 @@
+.logo {
+  width: 98px;
+  
+}
+
+.sidePannel {
+  z-index: 2;
+  display: inline-grid;
+  position: relative;
+  /* min-height: 10vh; */
+  /* margin-top: 550px; */
+  height: 100vh;
+  min-width: 350px;
+  top:0;
+  justify-content: center;
+  justify-items: start;
+  align-items: center;
+  transition: 0.3s ease;
+  
+}
+
+.insidePanel {
+  z-index: 2;
+  display: inline-grid;
+  position: fixed;
+  min-height: 93%;
+  margin-left: 55px;
+  
+  padding-left: 55px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  gap:70px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+  width: max-content;
+  padding-right: 100px;
+  padding-bottom: 15px;
+  padding-top: 25px;
+  justify-content: center;
+  justify-items: start;
+  align-items: center;
+  transition: 0.3s ease;
+  border: 2px solid #DEE2E6;
+}
+
+.insidePanel:hover {
+  box-shadow: 3px 7px 20px rgba(0, 0, 0, 0.25);
+}
+
+.insidePanel h1 {
+  margin-block-end: 0px;
+  cursor:default;
+  /* transform: translate(-10px); */
+}
+
+.insidePanel h2 {
+  margin-block-start: 0px;
+  font-weight: 300;
+  cursor:default;
+}
+
+
+.sideTopics {
+  /* width: ; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.topic {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  
+  gap: 10px;
+  font-size: 16px;
+  color: #ADB5BD;
+  transition: 0.3s ease;
+}
+
+.topic:hover {
+  color: #7f7f7f;
+}
+
+.topic h3 {
+  transition: 0.3s ease;
+  font-weight: 400;
+  width: 120px;
+  
+}
+.topic:hover h3 {
+  transform: translate(10px);
+  font-weight: 500;
+}
+
+.choosen-topic {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 16px;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.choosen-topic h3{
+  font-weight: 400;
+  width: 120px;
+  transform: translate(10px);
+}
+
+.logout-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 16px;
+  color: #ADB5BD;
+  transition: 0.3s ease;
+}
+
+.logout-button h3 {
+  font-weight: 400;
+  transition: 0.3s ease;
+}
+
+.logout-button:hover {
+  color: #7f7f7f;
+}
+
+.logout-button:hover h3 {
+  color: #FE4153;
+  /* font-weight: 500; */
+  transform: translate(10px);
+}
+
+.image-topic {
+  opacity: 0.4;
+  transition: 0.3s ease;
+}
+
+.dark-image-topic {
+  opacity: 1;
+}
+
+.topic:hover .image-topic {
+  opacity: 0.7;
+}

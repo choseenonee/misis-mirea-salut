@@ -1,0 +1,94 @@
+.choose-table-cont {
+  z-index: 1000;
+  width: 993px;
+  height: 201px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #fff;
+  transition: 0.3s ease;
+  /* gap: 25px; */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.choose-table-cont:hover {
+  box-shadow: 3px 7px 20px rgba(0, 0, 0, 0.25);
+}
+
+.head-line {
+  position: relative;
+  display: flex;
+  padding-left: 45px;
+  /* justify-content: space-around; */
+  gap:100px;
+  align-items: center;
+  padding-right: 63px
+}
+
+.change-label {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.change-button {
+  position: relative;
+  cursor: pointer;
+  width: 417px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #DC3545;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  justify-content: center;
+  color:white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.change-button:hover {
+  box-shadow: 3px 7px 20px rgba(0, 0, 0, 0.25);
+}
+
+.change-button p {
+  font-size: 16px;
+  font-weight: 600;
+  
+}
+
+.bottom-cont {
+  padding-left: 45px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+}
+
+.date-choose-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.date-choose-form p {
+  font-family: 'Inter';
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.upper-label {
+  font-size: 24px;
+}
+
+.bottom-label {
+  font-size: 20px;
+}
+
+.arrow-with-label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

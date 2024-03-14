@@ -1,0 +1,31 @@
+.Graph {
+  /* height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 2vw;
+  flex-wrap: wrap;
+  background-color: #ddd; */
+  z-index: 900;
+  position: relative;
+  margin-top: 20px;
+}
+
+.dataCard {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 26px;
+  padding: 1em;
+}
+
+.revenueCard {
+  width: 92%;
+  height: 20rem;
+}
+
+.customerCard {
+  height: 20rem;
+}

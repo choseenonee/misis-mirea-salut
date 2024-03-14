@@ -1,0 +1,43 @@
+
+.App {
+  background-color: #F8F9FA;
+  /* text-align: center; */
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap:50px;
+}
+
+.header {
+  top:0;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 55px 5px 5px;
+  gap: 20%;
+  z-index: 2;
+}
+
+
+.wide-line {
+  width: 100%;
+  bottom: 10%;
+  position: fixed;
+  z-index: 1;
+}
+
+.title-of-winners {
+  cursor: default;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 36px;
+  z-index: 1;
+}
+
+.right-side {
+  padding-right: 25px;
+  width: 100%;
+}

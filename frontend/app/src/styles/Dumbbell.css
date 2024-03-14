@@ -1,0 +1,98 @@
+@import url("https://code.highcharts.com/css/highcharts.css");
+
+#container {
+  margin-top: 100px;
+  position: relative;
+  height: 400px;
+  z-index: 10000;
+}
+
+.highcharts-background {
+  position: relative;
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+  stroke-width: 2px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+  z-index: 1000;
+  
+  
+}
+
+
+.highcharts-container  {
+  position: relative;
+  fill: #FFFFFF;
+  /* stroke: #000000; */
+  
+  stroke-width: 2px;
+  z-index: 1000;
+}
+
+.dumb-bell {
+  z-index: 1000;
+  position: relative;
+  width: 94%;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+}
+
+.dumb-bell:hover {
+  box-shadow: 3px 7px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* .highcharts-area {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+} */
+
+
+
+.highcharts-root {
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12); */
+  border-radius: 20px;
+}
+
+.highcharts-xaxis-grid .highcharts-grid-line {
+  /* stroke-width: 2px; */
+  /* stroke: #d8d8d8; */
+}
+
+.highcharts-xaxis .highcharts-tick {
+  /* stroke-width: 2px; */
+  /* stroke: #d8d8d8; */
+}
+
+.highcharts-grid-line {
+  /* stroke-dasharray: 2, 2; */
+  stroke: #d8d8d8;
+}
+
+.highcharts-lollipop-stem {
+  stroke: #2caffe;
+}
+
+.highcharts-lollipop-low {
+  stroke: #2caffe;
+}
+
+.highcharts-point {
+  stroke: #d8d8d8;
+}
+
+.highcharts-color-0 {
+  fill: #d8d8d8;
+  stroke: #2caffe;
+}
+
+.highcharts-tooltip  {
+  fill: white;
+  text-shadow: 0 0 3px black;
+}
+
+
+.highcharts-tooltip text {
+  fill: white;
+  text-shadow: 0 0 3px black;
+}
