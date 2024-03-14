@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: ../
+      dockerfile: deploy/app.Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres-database:
+        condition: service_healthy
+    volumes:
+      - ../../data/app:/app/cmd/log
+
+  postgres-database:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -h localhost -p 5432" ]
+      interval: 3s
+      timeout: 3s
+      retries: 5
+    volumes:
+      - ../../data/postgres:/var/lib/postgresql/data
+
+  jaeger:
+    image: jaegertracing/all-in-one
+    ports:
+      - "14268:14268"
+      - "16686:16686"

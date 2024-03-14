@@ -1,0 +1,145 @@
+definitions:
+  models.InData:
+    properties:
+      micro_category_id:
+        type: integer
+      region_id:
+        type: integer
+      user_id:
+        type: integer
+    type: object
+  models.OutData:
+    properties:
+      matrix_name:
+        type: string
+      micro_category_id:
+        type: integer
+      price:
+        type: integer
+      region_id:
+        type: integer
+      user_id:
+        type: integer
+    type: object
+  models.PreparedStorage:
+    properties:
+      baseline:
+        type: string
+      discount:
+        items:
+          type: string
+        type: array
+      discount_hops:
+        additionalProperties:
+          additionalProperties:
+            additionalProperties:
+              type: integer
+            type: object
+          type: object
+        type: object
+      micro_category_hops:
+        items:
+          type: integer
+        type: array
+      region_hops:
+        items:
+          type: integer
+        type: array
+      segment_discount:
+        additionalProperties:
+          type: string
+        type: object
+    type: object
+info:
+  contact: {}
+paths:
+  /price:
+    put:
+      consumes:
+      - application/json
+      parameters:
+      - description: Get price
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.InData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Successfully responsed with price
+          schema:
+            $ref: '#/definitions/models.OutData'
+        "400":
+          description: Invalid input
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal server error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      tags:
+      - price
+  /update_current_storage:
+    post:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Successfully responsed with price
+          schema:
+            type: string
+        "400":
+          description: Invalid input
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal server error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      tags:
+      - storage
+  /update_next_storage:
+    put:
+      consumes:
+      - application/json
+      parameters:
+      - description: Get price
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.PreparedStorage'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Successfully responsed with price
+          schema:
+            type: string
+        "400":
+          description: Invalid input
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal server error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      tags:
+      - storage
+swagger: "2.0"

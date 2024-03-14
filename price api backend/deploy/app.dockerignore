@@ -1,0 +1,7 @@
+.dockerignore
+app.Dockerfile
+.git
+.gitignore
+README.md
+LICENCE
+vendor
